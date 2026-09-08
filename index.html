@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174d37">
+  <meta name="description" content="Entre no WhatsApp da MatchPointBr e encontre achadinhos de tênis: ofertas de raquetes, bolas e acessórios para o seu jogo.">
+  <title>MatchPointBr | Achadinhos de tênis</title>
+  <style>
+    :root { color-scheme: light; --green: #174d37; --ink: #253b30; --muted: #607068; --lime: #dcf482; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; padding: 94px 20px 30px; background: #fafbf9; color: var(--ink); font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+    .card { position: relative; width: 100%; max-width: 530px; margin: 0 auto; padding: 94px 34px 30px; border: 1px solid #e8ede7; border-radius: 26px; background: #fff; box-shadow: 0 18px 50px #1937250c, 0 3px 8px #19372505; text-align: center; }
+    .brand { position: absolute; top: -65px; left: 50%; transform: translateX(-50%); width: 132px; height: 132px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; background: var(--green); color: var(--lime); border: 6px solid #fafbf9; box-shadow: 0 0 0 1px #e1e8df; }
+    .monogram { font-size: 48px; font-weight: 900; font-style: italic; letter-spacing: -5px; padding-right: 5px; line-height: 1; }
+    .brand span:last-child { margin-top: 9px; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+    .eyebrow { margin: 0 0 10px; color: var(--muted); font-size: 12px; letter-spacing: 2.2px; font-weight: 700; }
+    h1 { margin: 0; color: var(--green); font-size: clamp(27px, 6vw, 32px); letter-spacing: -1px; line-height: 1.15; }
+    h1 span { color: #688029; }
+    .intro { max-width: 390px; margin: 17px auto 26px; font-size: 17px; line-height: 1.6; }
+    .intro strong { font-weight: 700; }
+    .categories { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 0; margin: 0 0 26px; padding: 22px 10px; border-radius: 16px; background: #f0f4eb; color: var(--green); font-size: 14px; font-weight: 700; }
+    .categories span { padding: 3px 17px; }
+    .categories span + span { border-left: 1px solid #ccd9bd; }
+    .benefits { display: grid; gap: 17px; padding: 0; margin: 0 0 27px; list-style: none; text-align: left; }
+    .benefits li { display: flex; align-items: flex-start; gap: 13px; font-size: 16px; line-height: 1.5; }
+    .icon { flex: 0 0 23px; width: 23px; height: 23px; color: var(--green); margin-top: 1px; }
+    .cta { display: flex; justify-content: center; align-items: center; gap: 11px; min-height: 65px; padding: 18px 15px; background: #128c45; color: #fff; border: 1px solid #128c45; border-radius: 12px; text-decoration: none; font-size: 17px; line-height: 1.4; font-weight: 700; box-shadow: 0 5px 12px #128c451a; transition: background .18s, transform .18s, box-shadow .18s; }
+    .cta svg { width: 24px; height: 24px; flex-shrink: 0; }
+    .cta:hover { background: #0c7438; transform: translateY(-2px); box-shadow: 0 8px 18px #128c4526; }
+    .cta:active { transform: translateY(0); }
+    .cta:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+    .cta-note { margin: 11px 0 26px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .trust { border-top: 1px solid #e9eee6; padding-top: 24px; }
+    .trust h2 { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 0 10px; color: var(--green); font-size: 14px; letter-spacing: .5px; }
+    .trust p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    footer { margin: 23px auto 0; color: #6e796f; text-align: center; font-size: 12px; letter-spacing: .3px; }
+    @media (max-width: 480px) {
+      body { padding: 83px 16px 24px; }
+      .card { padding: 86px 22px 26px; border-radius: 22px; }
+      .brand { width: 120px; height: 120px; top: -60px; }
+      .monogram { font-size: 43px; }
+      .intro { font-size: 16px; margin-bottom: 23px; }
+      .categories { padding: 19px 4px; }
+      .categories span { padding: 3px 11px; }
+      .cta { font-size: 16px; padding: 17px 12px; gap: 9px; }
+    }
+    @media (max-width: 350px) { .card { padding-left: 17px; padding-right: 17px; } .categories span { padding-inline: 7px; } .cta { font-size: 15px; } }
+    @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="brand" aria-hidden="true"><span class="monogram">MP</span><span>TÊNIS</span></div>
+    <header>
+      <p class="eyebrow">SEU PRÓXIMO ACHADINHO ESTÁ AQUI</p>
+      <h1>MatchPoint<span>Br</span></h1>
+      <p class="intro">Ofertas que dão jogo! Encontre <strong>raquetes, bolas e acessórios</strong> para entrar em quadra gastando menos.</p>
+    </header>
+    <div class="categories" aria-label="Categorias de produtos"><span>Raquetes</span><span>Bolas</span><span>Acessórios</span></div>
+    <ul class="benefits">
+      <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 6.1A8 8 0 0 1 19.7 10M4.3 14A8 8 0 0 0 17.9 17.9"/></svg>
+        <span>Achadinhos selecionados para quem ama tênis, do primeiro saque ao match point.</span>
+      </li>
+      <li>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 6.1A8 8 0 0 1 19.7 10M4.3 14A8 8 0 0 0 17.9 17.9"/></svg>
+        <span>Entre no nosso grupo e acompanhe promoções e cupons de desconto pelo WhatsApp.</span>
+      </li>
+    </ul>
+    <!-- Para alterar o destino do botão, substitua apenas o endereço em href abaixo. -->
+    <a class="cta" href="https://wa.me/message/CPQZ3I2RWJWMO1" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z"/><path d="M8 7.5c-.6 0-1 1-1 1.6 0 2.9 4 6.9 6.9 6.9.8 0 1.8-.5 1.8-1.2v-1l-2.5-1.2-1 1c-1.2-.5-2.3-1.6-2.8-2.8l1-1L9.2 7.5H8Z"/></svg>
+      <span>Entrar no grupo do WhatsApp</span>
+    </a>
+    <p class="cta-note">Toque no botão para continuar no WhatsApp.</p>
+    <section class="trust" aria-labelledby="trust-title">
+      <h2 id="trust-title"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4v5c0 5-8 9-8 9s-8-4-8-9V7l8-4Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>ESCOLHA COM CONFIANÇA</h2>
+      <p>Confira os detalhes de cada oferta, as condições da loja e a disponibilidade antes de comprar.</p>
+    </section>
+  </main>
+  <footer>MatchPointBr · Achadinhos dentro e fora de quadra.</footer>
+</body>
+</html>
