@@ -86,7 +86,7 @@
       </li>
     </ul>
     <!-- Para alterar o destino do botão, substitua apenas o endereço em href abaixo. -->
-    <a class="cta" href="https://chat.whatsapp.com/K4mobunAsX33cXivWueS4f?s=cl&amp;p=i&amp;ilr=2" target="_blank" rel="noopener noreferrer">
+    <a class="cta" id="cta-whatsapp" href="https://chat.whatsapp.com/K4mobunAsX33cXivWueS4f?s=cl&amp;p=i&amp;ilr=2" target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z"/><path d="M8 7.5c-.6 0-1 1-1 1.6 0 2.9 4 6.9 6.9 6.9.8 0 1.8-.5 1.8-1.2v-1l-2.5-1.2-1 1c-1.2-.5-2.3-1.6-2.8-2.8l1-1L9.2 7.5H8Z"/></svg>
       <span>Entrar no grupo do WhatsApp</span>
     </a>
@@ -97,5 +97,13 @@
     </section>
   </main>
   <footer>MatchPointBr · Achadinhos dentro e fora de quadra.</footer>
+  <script>
+    // Dispara o evento "Lead" do Meta Pixel a cada clique no botão do WhatsApp
+    document.getElementById('cta-whatsapp').addEventListener('click', function () {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: 'Grupo WhatsApp MatchPointBr' });
+      }
+    });
+  </script>
 </body>
 </html>
